@@ -1,0 +1,93 @@
+.floor-plan-info{
+    svg{
+        max-width: calc(100% - 30px);
+        margin: 30px auto;
+    }
+}
+
+.flat {
+    &.free {
+        .bg-status {
+            fill: rgb(142, 194, 240);
+        }
+    }
+
+    &.action {
+        .bg-status {
+            fill: #2FFF50;
+        }
+    }
+
+    &.sold {
+        .bg-status {
+            fill: #CE3615;
+        }
+    }
+
+    &.booking {
+        .bg-status {
+            fill: #FFE600;
+        }
+    }
+    &.active{
+        .plan{
+            fill: #29fff4;
+            stroke:#29fff4 ;
+            stroke-width: 3px;
+        }
+    }
+
+}
+
+
+.plan {
+    fill: transparent;
+    stroke: transparent;
+    cursor: pointer;
+
+    &.booking-item:hover {
+        fill: #FFE600;
+        stroke: #FFE600;
+        stroke-width: 3px;
+        
+    }
+
+    &.free-item:hover {
+        fill: rgb(142, 194, 240);
+        stroke: rgb(142, 194, 240);
+        stroke-width: 3px;
+    }
+
+    &.sold-item:hover {
+        fill: #CE3615;
+        stroke: #CE3615;
+        stroke-width: 3px;
+    }
+
+    &.action-item:hover {
+        fill: #2FFF50;
+        stroke: #2FFF50;
+        stroke-width: 3px;
+    }
+}
+
+.flat-info{
+    display: flex;
+    margin: 30px;
+    padding: 36px 24px;
+}
+
+
+.flat-item{
+    padding: 20px;
+    border: 1px solid;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.2;
+    display: grid;
+    b{
+        font-size: 20px;
+        margin-top: auto;
+        padding-top: 12px;
+    }
+}
